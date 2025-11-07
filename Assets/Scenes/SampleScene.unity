@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 295566416}
   - component: {fileID: 295566418}
   - component: {fileID: 295566417}
+  - component: {fileID: 295566419}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -263,6 +264,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &295566419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295566415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a25599bef79bd409c0745628b82260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::camerabehavior
+  target: {fileID: 0}
+  smoothTime: 0.3
+  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +291,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -400,6 +417,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a25599bef79bd409c0745628b82260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::camerabehavior
+  target: {fileID: 842868303}
+  smoothTime: 0.3
+  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
