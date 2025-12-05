@@ -61,7 +61,7 @@ public class EnemyWaypointMovement : MonoBehaviour
         movementDirection = (targetPosition - (Vector2)transform.position).normalized;
 
         // Movimento
-        rb.linearVelocity = movementDirection * moveSpeed;
+        rb.linearVelocity = new Vector2(movementDirection.x * moveSpeed, rb.linearVelocity.y);
     }
 
     void CheckIfWaypointReached()
@@ -133,5 +133,9 @@ public class EnemyWaypointMovement : MonoBehaviour
                 lastAttackTime = Time.time;
             }
         }
+    }
+    public void Jump(float jumpForce)
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
 }
